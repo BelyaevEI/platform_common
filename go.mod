@@ -1,8 +1,18 @@
 module github.com/BelyaevEI/platform_common
 
-go 1.21.0
+go 1.22
 
-require github.com/jackc/pgx/v4 v4.18.3
+toolchain go1.22.6
+
+require (
+	github.com/gojuno/minimock/v3 v3.3.14
+	github.com/jackc/pgx/v4 v4.18.3
+)
+
+require (
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
+)
 
 require (
 	github.com/georgysavva/scany v1.2.2
