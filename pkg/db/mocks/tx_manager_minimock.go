@@ -37,7 +37,7 @@ func NewTxManagerMock(t minimock.Tester) *TxManagerMock {
 	m.ReadCommittedMock = mTxManagerMockReadCommitted{mock: m}
 	m.ReadCommittedMock.callArgs = []*TxManagerMockReadCommittedParams{}
 
-	t.Cleanup(m.MinimockFinish)
+	// t.Cleanup(m.MinimockFinish)
 
 	return m
 }
